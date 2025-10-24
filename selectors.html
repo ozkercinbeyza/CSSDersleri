@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        /*tüm elementleri seçer*/
+        color: red;
+      }
+      p,
+      h3 {
+        /* p ve h3 elementlerini seçer*/
+        color: aqua;
+      }
+      div p {
+        /* div elementi içindeki p elementlerini seç*/
+        color: aquamarine;
+      }
+      div > p {
+        /*annesi div olan p leri seç*/
+        color: blue;
+      }
+      div + p {
+        /* div elementi kapandıktan sonra ilk p yi seçer*/
+        color: chartreuse;
+      }
+      div > p:first-child {
+        /* div elementinin ilk çocuğu p ise onu seç*/
+        color: violet;
+      }
+      div > p:last-child {
+        /*div elementinin son çocuğu p ise onu seç*/
+        color: tomato;
+      }
+      div > p:nth-child(3) {
+        /*annesi div olan p lerden 3.yü seç*/
+      }
+      div > nav > a:nth-child(3) {
+        /*annesi div olan navın a olan çocuklarından 3.seç*/
+        color: black;
+      }
+      div > ul > li:nth-child(3) {
+        color: purple;
+      }
+      div > ul > div > li {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>paragraf</p>
+      <p>paragraf</p>
+      <p>paragraf</p>
+      <p>paragraf</p>
+      <p>paragraf</p>
+      <nav>
+        <p>paragraf</p>
+        <a href="">link</a>
+        <a href="">link2</a>
+        <a href="">link3</a>
+      </nav>
+      <a href="">link4</a>
+      <a href="">link5</a>
+    </div>
+    <div>
+      <p>paragraf</p>
+      <ul>
+        <li>beyz</li>
+        <li>beyz1</li>
+        <li>beyz2</li>
+        <div>
+          <li>li4</li>
+        </div>
+      </ul>
+      <p>paragraf</p>
+      <p>paragraf</p>
+    </div>
+    <p>paf</p>
+    <p>paf</p>
+    <div>
+      <p>paragraf</p>
+    </div>
+    <div>
+      <h3>h3 etiket</h3>
+    </div>
+    <h3>kdklcdlö</h3>
+    <h3>doxlsdlşcc</h3>
+    <h3>ckndksm</h3>
+  </body>
+</html>
